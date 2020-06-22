@@ -1724,6 +1724,13 @@ data InstanceType
   | R4_8XLarge
   | R4_Large
   | R4_XLarge
+  | R6g_16XLarge
+  | R6g_2XLarge
+  | R6g_4XLarge
+  | R6g_8XLarge
+  | R6g_Large
+  | R6g_Medium
+  | R6g_XLarge
   | T1_Micro
   | T2_2XLarge
   | T2_Large
@@ -1834,6 +1841,13 @@ instance FromText InstanceType where
         "r4.8xlarge" -> pure R4_8XLarge
         "r4.large" -> pure R4_Large
         "r4.xlarge" -> pure R4_XLarge
+        "r6g.16xlarge" -> pure R6g_16XLarge
+        "r6g.2xlarge" -> pure R6g_2XLarge
+        "r6g.4xlarge" -> pure R6g_4XLarge
+        "r6g.8xlarge" -> pure R6g_8XLarge
+        "r6g.large" -> pure R6g_Large
+        "r6g.medium" -> pure R6g_Medium
+        "r6g.xlarge" -> pure R6g_XLarge
         "t1.micro" -> pure T1_Micro
         "t2.2xlarge" -> pure T2_2XLarge
         "t2.large" -> pure T2_Large
@@ -1944,6 +1958,13 @@ instance ToText InstanceType where
         R4_8XLarge -> "r4.8xlarge"
         R4_Large -> "r4.large"
         R4_XLarge -> "r4.xlarge"
+        R6g_16XLarge -> "r6g.16xlarge"
+        R6g_2XLarge -> "r6g.2xlarge"
+        R6g_4XLarge -> "r6g.4xlarge"
+        R6g_8XLarge -> "r6g.8xlarge"
+        R6g_Large -> "r6g.large"
+        R6g_Medium -> "r6g.medium"
+        R6g_XLarge -> "r6g.xlarge"
         T1_Micro -> "t1.micro"
         T2_2XLarge -> "t2.2xlarge"
         T2_Large -> "t2.large"
